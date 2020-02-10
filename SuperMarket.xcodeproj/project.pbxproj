@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D35185A23F09DEA00DE95CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185923F09DEA00DE95CE /* AppDelegate.swift */; };
+		3D35185C23F09DEA00DE95CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */; };
+		3D35185E23F09DEA00DE95CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185D23F09DEA00DE95CE /* ViewController.swift */; };
+		3D35186123F09DEA00DE95CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D35185F23F09DEA00DE95CE /* Main.storyboard */; };
+		3D35186323F09DEC00DE95CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D35186223F09DEC00DE95CE /* Assets.xcassets */; };
+		3D35186623F09DEC00DE95CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D35186423F09DEC00DE95CE /* LaunchScreen.storyboard */; };
+		3D3518EB23F0EA0C00DE95CE /* CoordinatorServiceInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3518EA23F0EA0C00DE95CE /* CoordinatorServiceInterface */; };
+		3D3518EE23F0EA2F00DE95CE /* CoordinatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 3D3518ED23F0EA2F00DE95CE /* CoordinatorService */; };
+		3D3518F023F0EE5300DE95CE /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518EF23F0EE5300DE95CE /* StateViewController.swift */; };
+		3D3518F223F0EEC200DE95CE /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518F123F0EEC200DE95CE /* MessageViewController.swift */; };
+		3D3518F423F0EF3A00DE95CE /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518F323F0EF3A00DE95CE /* UIViewController+Child.swift */; };
+		3D3518F623F0EFCB00DE95CE /* ShoppingListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518F523F0EFCB00DE95CE /* ShoppingListDetailViewController.swift */; };
+		3D3518F823F0F07500DE95CE /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518F723F0F07500DE95CE /* ShoppingList.swift */; };
+		3D3518FA23F0F1CE00DE95CE /* ShoppingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518F923F0F1CE00DE95CE /* ShoppingListView.swift */; };
+		3D3518FC23F0F2B000DE95CE /* ContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518FB23F0F2B000DE95CE /* ContainerCollectionViewCell.swift */; };
+		3D3518FE23F0F45600DE95CE /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */; };
+		3D35190023F0F4AD00DE95CE /* SuperMarketFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */; };
+		3D35190223F0F8EE00DE95CE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35190123F0F8EE00DE95CE /* ContentViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D35188923F09F1D00DE95CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D35185623F09DEA00DE95CE /* SuperMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D35185923F09DEA00DE95CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D35185D23F09DEA00DE95CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D35186023F09DEA00DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D35186223F09DEC00DE95CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D35186523F09DEC00DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D35186723F09DEC00DE95CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3518EF23F0EE5300DE95CE /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
+		3D3518F123F0EEC200DE95CE /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		3D3518F323F0EF3A00DE95CE /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		3D3518F523F0EFCB00DE95CE /* ShoppingListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListDetailViewController.swift; sourceTree = "<group>"; };
+		3D3518F723F0F07500DE95CE /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		3D3518F923F0F1CE00DE95CE /* ShoppingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListView.swift; sourceTree = "<group>"; };
+		3D3518FB23F0F2B000DE95CE /* ContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
+		3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketFlowController.swift; sourceTree = "<group>"; };
+		3D35190123F0F8EE00DE95CE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D35185323F09DEA00DE95CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3518EB23F0EA0C00DE95CE /* CoordinatorServiceInterface in Frameworks */,
+				3D3518EE23F0EA2F00DE95CE /* CoordinatorService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D35184D23F09DEA00DE95CE = {
+			isa = PBXGroup;
+			children = (
+				3D35185823F09DEA00DE95CE /* SuperMarket */,
+				3D35185723F09DEA00DE95CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D35185723F09DEA00DE95CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D35185623F09DEA00DE95CE /* SuperMarket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D35185823F09DEA00DE95CE /* SuperMarket */ = {
+			isa = PBXGroup;
+			children = (
+				3D35185923F09DEA00DE95CE /* AppDelegate.swift */,
+				3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */,
+				3D35185D23F09DEA00DE95CE /* ViewController.swift */,
+				3D35185F23F09DEA00DE95CE /* Main.storyboard */,
+				3D35186223F09DEC00DE95CE /* Assets.xcassets */,
+				3D35186423F09DEC00DE95CE /* LaunchScreen.storyboard */,
+				3D35186723F09DEC00DE95CE /* Info.plist */,
+				3D3518EF23F0EE5300DE95CE /* StateViewController.swift */,
+				3D3518F323F0EF3A00DE95CE /* UIViewController+Child.swift */,
+				3D3518F123F0EEC200DE95CE /* MessageViewController.swift */,
+				3D3518F523F0EFCB00DE95CE /* ShoppingListDetailViewController.swift */,
+				3D3518F723F0F07500DE95CE /* ShoppingList.swift */,
+				3D3518F923F0F1CE00DE95CE /* ShoppingListView.swift */,
+				3D3518FB23F0F2B000DE95CE /* ContainerCollectionViewCell.swift */,
+				3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */,
+				3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */,
+				3D35190123F0F8EE00DE95CE /* ContentViewController.swift */,
+			);
+			path = SuperMarket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D35185523F09DEA00DE95CE /* SuperMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D35186A23F09DEC00DE95CE /* Build configuration list for PBXNativeTarget "SuperMarket" */;
+			buildPhases = (
+				3D35185223F09DEA00DE95CE /* Sources */,
+				3D35185323F09DEA00DE95CE /* Frameworks */,
+				3D35185423F09DEA00DE95CE /* Resources */,
+				3D35188923F09F1D00DE95CE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperMarket;
+			packageProductDependencies = (
+				3D3518EA23F0EA0C00DE95CE /* CoordinatorServiceInterface */,
+				3D3518ED23F0EA2F00DE95CE /* CoordinatorService */,
+			);
+			productName = SuperMarket;
+			productReference = 3D35185623F09DEA00DE95CE /* SuperMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D35184E23F09DEA00DE95CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Douglas Taquary";
+				TargetAttributes = {
+					3D35185523F09DEA00DE95CE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 3D35185123F09DEA00DE95CE /* Build configuration list for PBXProject "SuperMarket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D35184D23F09DEA00DE95CE;
+			packageReferences = (
+				3D3518E923F0EA0C00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorServiceInterface" */,
+				3D3518EC23F0EA2F00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorService" */,
+			);
+			productRefGroup = 3D35185723F09DEA00DE95CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D35185523F09DEA00DE95CE /* SuperMarket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D35185423F09DEA00DE95CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D35186623F09DEC00DE95CE /* LaunchScreen.storyboard in Resources */,
+				3D35186323F09DEC00DE95CE /* Assets.xcassets in Resources */,
+				3D35186123F09DEA00DE95CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D35185223F09DEA00DE95CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3518FA23F0F1CE00DE95CE /* ShoppingListView.swift in Sources */,
+				3D35190023F0F4AD00DE95CE /* SuperMarketFlowController.swift in Sources */,
+				3D3518F023F0EE5300DE95CE /* StateViewController.swift in Sources */,
+				3D35190223F0F8EE00DE95CE /* ContentViewController.swift in Sources */,
+				3D3518F823F0F07500DE95CE /* ShoppingList.swift in Sources */,
+				3D35185E23F09DEA00DE95CE /* ViewController.swift in Sources */,
+				3D35185A23F09DEA00DE95CE /* AppDelegate.swift in Sources */,
+				3D35185C23F09DEA00DE95CE /* SceneDelegate.swift in Sources */,
+				3D3518FC23F0F2B000DE95CE /* ContainerCollectionViewCell.swift in Sources */,
+				3D3518F623F0EFCB00DE95CE /* ShoppingListDetailViewController.swift in Sources */,
+				3D3518F223F0EEC200DE95CE /* MessageViewController.swift in Sources */,
+				3D3518FE23F0F45600DE95CE /* GenericCollectionViewController.swift in Sources */,
+				3D3518F423F0EF3A00DE95CE /* UIViewController+Child.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D35185F23F09DEA00DE95CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D35186023F09DEA00DE95CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D35186423F09DEC00DE95CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D35186523F09DEC00DE95CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D35186823F09DEC00DE95CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3D35186923F09DEC00DE95CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D35186B23F09DEC00DE95CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD2R3WP73K;
+				INFOPLIST_FILE = SuperMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglastaquary.SuperMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3D35186C23F09DEC00DE95CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MD2R3WP73K;
+				INFOPLIST_FILE = SuperMarket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.douglastaquary.SuperMarket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D35185123F09DEA00DE95CE /* Build configuration list for PBXProject "SuperMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D35186823F09DEC00DE95CE /* Debug */,
+				3D35186923F09DEC00DE95CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D35186A23F09DEC00DE95CE /* Build configuration list for PBXNativeTarget "SuperMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D35186B23F09DEC00DE95CE /* Debug */,
+				3D35186C23F09DEC00DE95CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D3518E923F0EA0C00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorServiceInterface" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/douglastaquary/CoordinatorServiceInterface.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+		3D3518EC23F0EA2F00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorService" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/douglastaquary/CoordinatorService.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D3518EA23F0EA0C00DE95CE /* CoordinatorServiceInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D3518E923F0EA0C00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorServiceInterface" */;
+			productName = CoordinatorServiceInterface;
+		};
+		3D3518ED23F0EA2F00DE95CE /* CoordinatorService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D3518EC23F0EA2F00DE95CE /* XCRemoteSwiftPackageReference "CoordinatorService" */;
+			productName = CoordinatorService;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3D35184E23F09DEA00DE95CE /* Project object */;
+}

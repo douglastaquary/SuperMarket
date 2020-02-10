@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CoordinatorService",
+        "repositoryURL": "https://github.com/douglastaquary/CoordinatorService.git",
+        "state": {
+          "branch": null,
+          "revision": "7ce13538ece2747ca8bc721de77416b24c6f0a8a",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "CoordinatorServiceInterface",
+        "repositoryURL": "https://github.com/douglastaquary/CoordinatorServiceInterface.git",
+        "state": {
+          "branch": null,
+          "revision": "2611d50ade79109407d5db86f29505c30523913b",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
