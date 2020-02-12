@@ -38,7 +38,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 if content.isEmpty {
                     stateController.state = .empty(message: "There is no content here, this is an empty message.")
                 } else {
-                    stateController.state = .content(controller: ContentViewController(content: content))
+                    let emptyStateVC = SupermarketEmptyStateViewController()
+                    emptyStateVC.title = "Chupa"
+                    emptyStateVC.imageName = "diet_128"
+                    emptyStateVC.iconColor = SupermarketColor.primaryGreen
+                    emptyStateVC.emptyStateTitle = "Só nada!"
+                    emptyStateVC.text = "Subtitle lindão!"
+                    emptyStateVC.linkButtonTitle = "Começar"
+                    stateController.state = .content(controller: emptyStateVC)//ContentViewController(content: content))
                 }
             case .failure(let error):
                 stateController.state = .error(message: error.localizedDescription)

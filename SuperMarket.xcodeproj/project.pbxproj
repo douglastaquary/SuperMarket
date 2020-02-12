@@ -25,6 +25,21 @@
 		3D3518FE23F0F45600DE95CE /* GenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */; };
 		3D35190023F0F4AD00DE95CE /* SuperMarketFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */; };
 		3D35190223F0F8EE00DE95CE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35190123F0F8EE00DE95CE /* ContentViewController.swift */; };
+		3DAE646C23F382D40042C210 /* SuperMarketDialogTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE646B23F382D40042C210 /* SuperMarketDialogTransitioningDelegate.swift */; };
+		3DAE646E23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE646D23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift */; };
+		3DAE647023F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE646F23F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift */; };
+		3DAE647223F383E60042C210 /* SuperMarketDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647123F383E60042C210 /* SuperMarketDialogViewController.swift */; };
+		3DAE647423F384110042C210 /* SupermarketColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647323F384110042C210 /* SupermarketColor.swift */; };
+		3DAE647623F386F60042C210 /* SupermarketDialogPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647523F386F60042C210 /* SupermarketDialogPresentationController.swift */; };
+		3DAE647A23F387530042C210 /* SupermaketDialogAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647923F387530042C210 /* SupermaketDialogAction.swift */; };
+		3DAE647D23F388D10042C210 /* SupermarketLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647C23F388D10042C210 /* SupermarketLabel.swift */; };
+		3DAE648023F38EBF0042C210 /* SupermarketTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE647F23F38EBF0042C210 /* SupermarketTextButton.swift */; };
+		3DAE648423F398540042C210 /* SupermarketImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648323F398540042C210 /* SupermarketImageView.swift */; };
+		3DAE648623F398BF0042C210 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648523F398BF0042C210 /* EmptyStateView.swift */; };
+		3DAE648823F39A990042C210 /* SupermarketEmptyStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648723F39A990042C210 /* SupermarketEmptyStateViewController.swift */; };
+		3DAE648A23F3A1F70042C210 /* SupermarketRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648923F3A1F70042C210 /* SupermarketRoundedButton.swift */; };
+		3DAE648C23F3A20D0042C210 /* RoundedButtonThemePrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648B23F3A20D0042C210 /* RoundedButtonThemePrimary.swift */; };
+		3DAE648E23F3A21E0042C210 /* RoundedButtonThemeSecondary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAE648D23F3A21E0042C210 /* RoundedButtonThemeSecondary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +74,21 @@
 		3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewController.swift; sourceTree = "<group>"; };
 		3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketFlowController.swift; sourceTree = "<group>"; };
 		3D35190123F0F8EE00DE95CE /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		3DAE646B23F382D40042C210 /* SuperMarketDialogTransitioningDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketDialogTransitioningDelegate.swift; sourceTree = "<group>"; };
+		3DAE646D23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketDialogPresentationAnimator.swift; sourceTree = "<group>"; };
+		3DAE646F23F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketDialogDismissionAnimator.swift; sourceTree = "<group>"; };
+		3DAE647123F383E60042C210 /* SuperMarketDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketDialogViewController.swift; sourceTree = "<group>"; };
+		3DAE647323F384110042C210 /* SupermarketColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketColor.swift; sourceTree = "<group>"; };
+		3DAE647523F386F60042C210 /* SupermarketDialogPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketDialogPresentationController.swift; sourceTree = "<group>"; };
+		3DAE647923F387530042C210 /* SupermaketDialogAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermaketDialogAction.swift; sourceTree = "<group>"; };
+		3DAE647C23F388D10042C210 /* SupermarketLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketLabel.swift; sourceTree = "<group>"; };
+		3DAE647F23F38EBF0042C210 /* SupermarketTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketTextButton.swift; sourceTree = "<group>"; };
+		3DAE648323F398540042C210 /* SupermarketImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketImageView.swift; sourceTree = "<group>"; };
+		3DAE648523F398BF0042C210 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		3DAE648723F39A990042C210 /* SupermarketEmptyStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketEmptyStateViewController.swift; sourceTree = "<group>"; };
+		3DAE648923F3A1F70042C210 /* SupermarketRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketRoundedButton.swift; sourceTree = "<group>"; };
+		3DAE648B23F3A20D0042C210 /* RoundedButtonThemePrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonThemePrimary.swift; sourceTree = "<group>"; };
+		3DAE648D23F3A21E0042C210 /* RoundedButtonThemeSecondary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonThemeSecondary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +123,7 @@
 		3D35185823F09DEA00DE95CE /* SuperMarket */ = {
 			isa = PBXGroup;
 			children = (
+				3DAE646A23F382B20042C210 /* Design System */,
 				3D35185923F09DEA00DE95CE /* AppDelegate.swift */,
 				3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */,
 				3D35185D23F09DEA00DE95CE /* ViewController.swift */,
@@ -112,6 +143,76 @@
 				3D35190123F0F8EE00DE95CE /* ContentViewController.swift */,
 			);
 			path = SuperMarket;
+			sourceTree = "<group>";
+		};
+		3DAE646A23F382B20042C210 /* Design System */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE648223F397F60042C210 /* Images */,
+				3DAE648123F396AC0042C210 /* Empty State */,
+				3DAE647E23F38E630042C210 /* Buttons */,
+				3DAE647B23F388680042C210 /* Label */,
+				3DAE647823F387130042C210 /* Dialog */,
+				3DAE647723F387060042C210 /* Color */,
+			);
+			path = "Design System";
+			sourceTree = "<group>";
+		};
+		3DAE647723F387060042C210 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE647323F384110042C210 /* SupermarketColor.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		3DAE647823F387130042C210 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE646B23F382D40042C210 /* SuperMarketDialogTransitioningDelegate.swift */,
+				3DAE646D23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift */,
+				3DAE646F23F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift */,
+				3DAE647123F383E60042C210 /* SuperMarketDialogViewController.swift */,
+				3DAE647523F386F60042C210 /* SupermarketDialogPresentationController.swift */,
+				3DAE647923F387530042C210 /* SupermaketDialogAction.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		3DAE647B23F388680042C210 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE647C23F388D10042C210 /* SupermarketLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		3DAE647E23F38E630042C210 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE647F23F38EBF0042C210 /* SupermarketTextButton.swift */,
+				3DAE648923F3A1F70042C210 /* SupermarketRoundedButton.swift */,
+				3DAE648B23F3A20D0042C210 /* RoundedButtonThemePrimary.swift */,
+				3DAE648D23F3A21E0042C210 /* RoundedButtonThemeSecondary.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3DAE648123F396AC0042C210 /* Empty State */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE648523F398BF0042C210 /* EmptyStateView.swift */,
+				3DAE648723F39A990042C210 /* SupermarketEmptyStateViewController.swift */,
+			);
+			path = "Empty State";
+			sourceTree = "<group>";
+		};
+		3DAE648223F397F60042C210 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3DAE648323F398540042C210 /* SupermarketImageView.swift */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,19 +295,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAE648023F38EBF0042C210 /* SupermarketTextButton.swift in Sources */,
 				3D3518FA23F0F1CE00DE95CE /* ShoppingListView.swift in Sources */,
 				3D35190023F0F4AD00DE95CE /* SuperMarketFlowController.swift in Sources */,
 				3D3518F023F0EE5300DE95CE /* StateViewController.swift in Sources */,
+				3DAE648E23F3A21E0042C210 /* RoundedButtonThemeSecondary.swift in Sources */,
 				3D35190223F0F8EE00DE95CE /* ContentViewController.swift in Sources */,
+				3DAE647023F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift in Sources */,
 				3D3518F823F0F07500DE95CE /* ShoppingList.swift in Sources */,
 				3D35185E23F09DEA00DE95CE /* ViewController.swift in Sources */,
+				3DAE646E23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift in Sources */,
+				3DAE647223F383E60042C210 /* SuperMarketDialogViewController.swift in Sources */,
+				3DAE648423F398540042C210 /* SupermarketImageView.swift in Sources */,
+				3DAE646C23F382D40042C210 /* SuperMarketDialogTransitioningDelegate.swift in Sources */,
+				3DAE647A23F387530042C210 /* SupermaketDialogAction.swift in Sources */,
+				3DAE648A23F3A1F70042C210 /* SupermarketRoundedButton.swift in Sources */,
 				3D35185A23F09DEA00DE95CE /* AppDelegate.swift in Sources */,
+				3DAE648823F39A990042C210 /* SupermarketEmptyStateViewController.swift in Sources */,
 				3D35185C23F09DEA00DE95CE /* SceneDelegate.swift in Sources */,
 				3D3518FC23F0F2B000DE95CE /* ContainerCollectionViewCell.swift in Sources */,
+				3DAE647423F384110042C210 /* SupermarketColor.swift in Sources */,
 				3D3518F623F0EFCB00DE95CE /* ShoppingListDetailViewController.swift in Sources */,
+				3DAE648623F398BF0042C210 /* EmptyStateView.swift in Sources */,
 				3D3518F223F0EEC200DE95CE /* MessageViewController.swift in Sources */,
 				3D3518FE23F0F45600DE95CE /* GenericCollectionViewController.swift in Sources */,
+				3DAE647D23F388D10042C210 /* SupermarketLabel.swift in Sources */,
 				3D3518F423F0EF3A00DE95CE /* UIViewController+Child.swift in Sources */,
+				3DAE648C23F3A20D0042C210 /* RoundedButtonThemePrimary.swift in Sources */,
+				3DAE647623F386F60042C210 /* SupermarketDialogPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
