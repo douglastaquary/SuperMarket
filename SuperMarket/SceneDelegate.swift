@@ -14,10 +14,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     
     // CONTAINER
-    func loadContent(with completion: @escaping (Result<[ShoppingList], Error>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            completion(.success(shopping))
-        }
+    // CONTAINER
+    lazy var supermarketService: SupermarketServiceProtocol = {
+        return SupermarketService()
+    }()
+    
+    fileprivate func makeViewFlowLayout() -> UICollectionViewFlowLayout {
+        let l = UICollectionViewFlowLayout()
+        let margin = CGFloat(16)
+
+        l.scrollDirection = .vertical
+        l.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+        l.minimumLineSpacing = 4
+        l.sectionInset = UIEdgeInsets(top: margin, left: 0, bottom: 0, right: 0)
+
+        return l
     }
 
 
@@ -32,20 +43,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let stateController = StateViewController()
         stateController.title = "Container"
 
-        loadContent { result in
+        supermarketService.loadContent { result in
             switch result {
             case .success(let content):
                 if content.isEmpty {
                     stateController.state = .empty(message: "There is no content here, this is an empty message.")
                 } else {
-                    let emptyStateVC = SupermarketEmptyStateViewController()
-                    emptyStateVC.title = "Chupa"
-                    emptyStateVC.imageName = "diet_128"
-                    emptyStateVC.iconColor = SupermarketColor.primaryGreen
-                    emptyStateVC.emptyStateTitle = "Só nada!"
-                    emptyStateVC.text = "Subtitle lindão!"
-                    emptyStateVC.linkButtonTitle = "Começar"
-                    stateController.state = .content(controller: emptyStateVC)//ContentViewController(content: content))
+                    let emptyStateViewController = SupermarketEmptyStateViewController()
+                    emptyStateViewController.title = "Lista de compras"
+                    emptyStateViewController.imageName = "diet_128"
+                    emptyStateViewController.iconColor = SupermarketColor.primaryGreen
+                    emptyStateViewController.emptyStateTitle = "No content"
+                    emptyStateViewController.text = "There is no content here, this is an empty message."
+                    emptyStateViewController.linkButtonTitle = "Entendi"
+                    stateController.state = .content(controller: emptyStateViewController)
                 }
             case .failure(let error):
                 stateController.state = .error(message: error.localizedDescription)
@@ -53,7 +64,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
         // GENERIC CONTROLLER
-        let genericController = GenericCollectionViewController(viewType: ShoppingListView.self)
+        let genericController = GenericCollectionViewController(viewType: ShoppingListView.self, flowLayout: makeViewFlowLayout())
 
         genericController.numberOfItems = { shopping.count }
         genericController.configureView = { $1.label.text = shopping[$0.item].title }
@@ -67,23 +78,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let tabController = UITabBarController()
         tabController.viewControllers = [stateController, genericController, flowController]
-        //tabController.setViewControllers([stateController, genericController, flowController], animated: false)
+        tabController.setViewControllers([stateController, genericController, flowController], animated: false)
         
         window?.rootViewController = tabController
         window?.makeKeyAndVisible()
-        
-//        
-//
-//        let window = UIWindow(windowScene: windowScene)
-//        let timeline = TimelineViewController()
-//
-//        let window = UIWindow(windowScene: windowScene)
-//
-//        let navigation = UINavigationController(rootViewController: timeline)
-//        window.rootViewController = navigation
-//
-//        self.window = window
-//        window.makeKeyAndVisible()
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

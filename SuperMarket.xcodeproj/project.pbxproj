@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D42CDAB240F4F4600CC383D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D42CDAA240F4F4600CC383D /* Coordinator.swift */; };
+		1D8B41BF240F45D00006D307 /* SupermarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8B41BE240F45D00006D307 /* SupermarketService.swift */; };
 		3D35185A23F09DEA00DE95CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185923F09DEA00DE95CE /* AppDelegate.swift */; };
 		3D35185C23F09DEA00DE95CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */; };
-		3D35185E23F09DEA00DE95CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D35185D23F09DEA00DE95CE /* ViewController.swift */; };
 		3D35186123F09DEA00DE95CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D35185F23F09DEA00DE95CE /* Main.storyboard */; };
 		3D35186323F09DEC00DE95CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D35186223F09DEC00DE95CE /* Assets.xcassets */; };
 		3D35186623F09DEC00DE95CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D35186423F09DEC00DE95CE /* LaunchScreen.storyboard */; };
@@ -56,10 +57,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D42CDAA240F4F4600CC383D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1D8B41BE240F45D00006D307 /* SupermarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupermarketService.swift; sourceTree = "<group>"; };
 		3D35185623F09DEA00DE95CE /* SuperMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D35185923F09DEA00DE95CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D35185D23F09DEA00DE95CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D35186023F09DEA00DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D35186223F09DEC00DE95CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D35186523F09DEC00DE95CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +106,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D8B41C0240F45DB0006D307 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1D8B41BE240F45D00006D307 /* SupermarketService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1D8B41C1240F45EE0006D307 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D3518EF23F0EE5300DE95CE /* StateViewController.swift */,
+				3D3518F123F0EEC200DE95CE /* MessageViewController.swift */,
+				3D3518F523F0EFCB00DE95CE /* ShoppingListDetailViewController.swift */,
+				3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */,
+				3D35190123F0F8EE00DE95CE /* ContentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D8B41C2240F45FB0006D307 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1D8B41C3240F46190006D307 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		1D8B41C4240F46420006D307 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D3518F323F0EF3A00DE95CE /* UIViewController+Child.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1D8B41C5240F465B0006D307 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D3518F723F0F07500DE95CE /* ShoppingList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D8B41C6240F466F0006D307 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D3518F923F0F1CE00DE95CE /* ShoppingListView.swift */,
+				3D3518FB23F0F2B000DE95CE /* ContainerCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3D35184D23F09DEA00DE95CE = {
 			isa = PBXGroup;
 			children = (
@@ -123,24 +185,21 @@
 		3D35185823F09DEA00DE95CE /* SuperMarket */ = {
 			isa = PBXGroup;
 			children = (
+				1D8B41C6240F466F0006D307 /* Views */,
+				1D8B41C5240F465B0006D307 /* Models */,
+				1D8B41C4240F46420006D307 /* Extensions */,
+				1D8B41C3240F46190006D307 /* Flows */,
+				1D8B41C2240F45FB0006D307 /* ViewModels */,
+				1D8B41C1240F45EE0006D307 /* Controllers */,
+				1D8B41C0240F45DB0006D307 /* Service */,
 				3DAE646A23F382B20042C210 /* Design System */,
 				3D35185923F09DEA00DE95CE /* AppDelegate.swift */,
 				3D35185B23F09DEA00DE95CE /* SceneDelegate.swift */,
-				3D35185D23F09DEA00DE95CE /* ViewController.swift */,
 				3D35185F23F09DEA00DE95CE /* Main.storyboard */,
 				3D35186223F09DEC00DE95CE /* Assets.xcassets */,
 				3D35186423F09DEC00DE95CE /* LaunchScreen.storyboard */,
 				3D35186723F09DEC00DE95CE /* Info.plist */,
-				3D3518EF23F0EE5300DE95CE /* StateViewController.swift */,
-				3D3518F323F0EF3A00DE95CE /* UIViewController+Child.swift */,
-				3D3518F123F0EEC200DE95CE /* MessageViewController.swift */,
-				3D3518F523F0EFCB00DE95CE /* ShoppingListDetailViewController.swift */,
-				3D3518F723F0F07500DE95CE /* ShoppingList.swift */,
-				3D3518F923F0F1CE00DE95CE /* ShoppingListView.swift */,
-				3D3518FB23F0F2B000DE95CE /* ContainerCollectionViewCell.swift */,
-				3D3518FD23F0F45600DE95CE /* GenericCollectionViewController.swift */,
-				3D3518FF23F0F4AD00DE95CE /* SuperMarketFlowController.swift */,
-				3D35190123F0F8EE00DE95CE /* ContentViewController.swift */,
+				1D42CDAA240F4F4600CC383D /* Coordinator.swift */,
 			);
 			path = SuperMarket;
 			sourceTree = "<group>";
@@ -303,7 +362,7 @@
 				3D35190223F0F8EE00DE95CE /* ContentViewController.swift in Sources */,
 				3DAE647023F3833E0042C210 /* SuperMarketDialogDismissionAnimator.swift in Sources */,
 				3D3518F823F0F07500DE95CE /* ShoppingList.swift in Sources */,
-				3D35185E23F09DEA00DE95CE /* ViewController.swift in Sources */,
+				1D8B41BF240F45D00006D307 /* SupermarketService.swift in Sources */,
 				3DAE646E23F383040042C210 /* SuperMarketDialogPresentationAnimator.swift in Sources */,
 				3DAE647223F383E60042C210 /* SuperMarketDialogViewController.swift in Sources */,
 				3DAE648423F398540042C210 /* SupermarketImageView.swift in Sources */,
@@ -313,6 +372,7 @@
 				3D35185A23F09DEA00DE95CE /* AppDelegate.swift in Sources */,
 				3DAE648823F39A990042C210 /* SupermarketEmptyStateViewController.swift in Sources */,
 				3D35185C23F09DEA00DE95CE /* SceneDelegate.swift in Sources */,
+				1D42CDAB240F4F4600CC383D /* Coordinator.swift in Sources */,
 				3D3518FC23F0F2B000DE95CE /* ContainerCollectionViewCell.swift in Sources */,
 				3DAE647423F384110042C210 /* SupermarketColor.swift in Sources */,
 				3D3518F623F0EFCB00DE95CE /* ShoppingListDetailViewController.swift in Sources */,

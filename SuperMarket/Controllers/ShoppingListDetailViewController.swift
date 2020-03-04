@@ -15,7 +15,6 @@ public final class ShoppingListDetailViewController: UIViewController {
 
     public init(shopping: ShoppingList) {
         self.shopping = shopping
-
         super.init(nibName: nil, bundle: nil)
     }
 

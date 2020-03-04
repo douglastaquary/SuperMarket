@@ -13,53 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
 
-    // CONTAINER
-    func loadContent(with completion: @escaping (Result<[ShoppingList], Error>) -> Void) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            completion(.success(shopping))
-        }
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow()
 
-        let stateController = StateViewController()
-        stateController.title = "Container"
-
-        loadContent { result in
-            switch result {
-            case .success(let content):
-                if content.isEmpty {
-                    stateController.state = .empty(message: "There is no content here, this is an empty message.")
-                } else {
-                    stateController.state = .content(controller: ContentViewController(content: content))
-                }
-            case .failure(let error):
-                stateController.state = .error(message: error.localizedDescription)
-            }
-        }
-        
-        // GENERIC CONTROLLER
-        let genericController = GenericCollectionViewController(viewType: ShoppingListView.self)
-
-        genericController.numberOfItems = { shopping.count }
-        genericController.configureView = { $1.label.text = shopping[$0.item].title }
-        genericController.didSelectView = { i, _ in print(shopping[i.item]) }
-        genericController.title = "Generic"
-
-        
-        // FLOW CONTROLLER
-        let flowController = SuperMarketFlowController()
-        flowController.title = "Flow"
-
-        let tabController = UITabBarController()
-        tabController.viewControllers = [stateController, genericController, flowController]
-        //tabController.setViewControllers([stateController, genericController, flowController], animated: false)
-        
-        window?.rootViewController = tabController
-        window?.makeKeyAndVisible()
-        
         return true
     }
 

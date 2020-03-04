@@ -8,6 +8,18 @@
 
 import UIKit
 
+fileprivate func makeViewFlowLayout() -> UICollectionViewFlowLayout {
+    let l = UICollectionViewFlowLayout()
+    let margin = CGFloat(16)
+
+    l.scrollDirection = .vertical
+    l.estimatedItemSize = CGSize(width: UIScreen.main.bounds.width, height: 100)
+    l.minimumLineSpacing = 4
+    l.sectionInset = UIEdgeInsets(top: margin, left: 0, bottom: 0, right: 0)
+
+    return l
+}
+
 public final class SuperMarketFlowController: UIViewController {
 
     private typealias SupermarketCollectionController = GenericCollectionViewController<ShoppingListView, ContainerCollectionViewCell<ShoppingListView>>
@@ -23,7 +35,7 @@ public final class SuperMarketFlowController: UIViewController {
     }()
 
     private lazy var supermarketListCollectionController: SupermarketCollectionController = {
-        let c = SupermarketCollectionController(viewType: ShoppingListView.self)
+        let c = SupermarketCollectionController(viewType: ShoppingListView.self, flowLayout: makeViewFlowLayout())
 
         c.numberOfItems = { shopping.count }
         c.configureView = { $1.label.text = shopping[$0.item].title }
